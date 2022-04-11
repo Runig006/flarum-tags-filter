@@ -1,0 +1,46 @@
+{
+  "name": "runig006/tag-filter",
+  "description": "Filter discussion lists by tag.",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "version": "1.0.0",
+  "require": {
+    "flarum/core": "^1.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Runig006\\TagFilter\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Tag Filter",
+      "category": "feature",
+      "icon": {
+          "name": "fas fa-tags",
+          "backgroundColor": "#EBF1FD",
+          "color": "#3a98d0"
+      }
+    },
+    "flarum-cli": {
+      "modules": {
+        "admin": true,
+        "forum": true,
+        "js": true,
+        "jsCommon": true,
+        "css": true,
+        "locale": true,
+        "gitConf": true,
+        "githubActions": true,
+        "prettier": true,
+        "typescript": true,
+        "bundlewatch": false,
+        "backendTesting": false,
+        "editorConfig": false,
+        "styleci": true
+      }
+    }
+  }
+}
