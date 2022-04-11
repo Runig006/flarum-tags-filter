@@ -19,7 +19,7 @@ export default class TagsDropdown extends Component<IAttrs, IState> {
     super.oninit(vnode);
     this.state = {
       data: app.store.all('tags').filter(tag => !tag.parent()),
-      selected: sessionStorage.getItem('tags_filters') ? JSON.parse(sessionStorage.getItem('tags_filters')) : [],
+      selected: app.search.params().tags ? app.search.params().tags.split(',') : [],
     };
   }
 
@@ -53,10 +53,7 @@ export default class TagsDropdown extends Component<IAttrs, IState> {
     }else{
       this.state.selected.push(tag.slug());
     }
-    sessionStorage.setItem('tags_filters', JSON.stringify(this.state.selected));
-
     params.tags = this.state.selected.join(',');
-    console.log(params);
     app.discussions.refreshParams(params, 2);
   }
 }
