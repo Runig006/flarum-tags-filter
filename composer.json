@@ -20,7 +20,7 @@
       "category": "feature",
       "icon": {
           "name": "fas fa-tags",
-          "backgroundColor": "#EBF1FD",
+          "backgroundColor": "#f70",
           "color": "#3a98d0"
       }
     },
