@@ -11,11 +11,16 @@
 
 namespace Runig006\TagFilter;
 
+use Flarum\Discussion\Filter\DiscussionFilterer;
 use Flarum\Extend;
+use Runig006\TagFilter\HideIgnoredFromAllDiscussionsPage;
 
 return [
     (new Extend\Frontend('forum'))
         ->js(__DIR__ . '/js/dist/forum.js')
-        ->css(__DIR__.'/less/forum.less')
+        ->css(__DIR__.'/less/forum.less'),
+
+    (new Extend\Filter(DiscussionFilterer::class))
+        ->addFilterMutator(HideIgnoredFromAllDiscussionsPage::class)
 
 ];
