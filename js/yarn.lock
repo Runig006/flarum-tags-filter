@@ -1380,21 +1380,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@blomstra/user-filter@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@blomstra/user-filter@workspace:."
-  dependencies:
-    "@flarum/prettier-config": ^1.0.0
-    flarum-tsconfig: ^1.0.2
-    flarum-webpack-config: ^2.0.0
-    prettier: ^2.5.1
-    typescript: ^4.5.5
-    typescript-coverage-report: ^0.6.4
-    webpack: ^5.68.0
-    webpack-cli: ^4.9.2
-  languageName: unknown
-  linkType: soft
-
 "@discoveryjs/json-ext@npm:^0.5.0":
   version: 0.5.6
   resolution: "@discoveryjs/json-ext@npm:0.5.6"
@@ -1480,6 +1465,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@runig006/tag-filter@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@runig006/tag-filter@workspace:."
+  dependencies:
+    "@flarum/prettier-config": ^1.0.0
+    flarum-webpack-config: ^2.0.0
+    prettier: ^2.5.1
+    typescript: ^4.5.5
+    typescript-coverage-report: ^0.6.4
+    webpack: ^5.68.0
+    webpack-cli: ^4.9.2
+  languageName: unknown
+  linkType: soft
+
 "@semantic-ui-react/event-stack@npm:^3.1.0":
   version: 3.1.2
   resolution: "@semantic-ui-react/event-stack@npm:3.1.2"
@@ -1554,15 +1553,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jquery@npm:^3.5.5":
-  version: 3.5.13
-  resolution: "@types/jquery@npm:3.5.13"
-  dependencies:
-    "@types/sizzle": "*"
-  checksum: cb4e6aacaf36905049d5ac93da1fabed17da285fafe38c88feba89d7c9912e108c934ea05c908b87ae199f2830e5e002a72d0cc8aaef4a33539581d0a7a6abe8
-  languageName: node
-  linkType: hard
-
 "@types/json-schema@npm:*, @types/json-schema@npm:^7.0.5, @types/json-schema@npm:^7.0.8":
   version: 7.0.9
   resolution: "@types/json-schema@npm:7.0.9"
@@ -1570,31 +1560,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mithril@npm:^2.0.7":
-  version: 2.0.8
-  resolution: "@types/mithril@npm:2.0.8"
-  checksum: 53d10bacd004b8028884a2e5a908ce32fd54da5247e47afd8aec0edff01fd56cc239fd72d0487d406d328363dc55adcefcd430088584e68622c2623708c94cbd
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:*":
   version: 17.0.15
   resolution: "@types/node@npm:17.0.15"
   checksum: aa64ecf4fbcf9888e794dcdc20e98c49cdcb102b17e57c44ca56943904732d6cc250e766f8448a3cd71d6a40a4b597bd83c565e5bd9b982733fa3f9813d5c291
-  languageName: node
-  linkType: hard
-
-"@types/sizzle@npm:*":
-  version: 2.3.3
-  resolution: "@types/sizzle@npm:2.3.3"
-  checksum: 586a9fb1f6ff3e325e0f2cc1596a460615f0bc8a28f6e276ac9b509401039dd242fa8b34496d3a30c52f5b495873922d09a9e76c50c2ab2bcc70ba3fb9c4e160
-  languageName: node
-  linkType: hard
-
-"@types/throttle-debounce@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@types/throttle-debounce@npm:2.1.0"
-  checksum: 70e219d000595108fce0dc624c8296e37cdb174b528e09c939da18e619da1c6df86b088659f5eb93cb146bd5fe2954597823c2e1f0849dc8f6585d87cbbf71b7
   languageName: node
   linkType: hard
 
@@ -2169,13 +2138,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.10.4":
-  version: 1.10.7
-  resolution: "dayjs@npm:1.10.7"
-  checksum: a0a4ca95abaa03d0702161dc2c35d16121188e342f5052b9c61cdf784dab68af766f477c04f87f71c6af666fd4d13db9b9853b87265850d6093b7b04e1bb1cd7
-  languageName: node
-  linkType: hard
-
 "debug@npm:^4.1.0, debug@npm:^4.1.1":
   version: 4.3.3
   resolution: "debug@npm:4.3.3"
@@ -2420,18 +2382,6 @@ __metadata:
     locate-path: ^5.0.0
     path-exists: ^4.0.0
   checksum: 4c172680e8f8c1f78839486e14a43ef82e9decd0e74145f40707cc42e7420506d5ec92d9a11c22bd2c48fb0c384ea05dd30e10dd152fefeec6f2f75282a8b844
-  languageName: node
-  linkType: hard
-
-"flarum-tsconfig@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "flarum-tsconfig@npm:1.0.2"
-  dependencies:
-    "@types/jquery": ^3.5.5
-    "@types/mithril": ^2.0.7
-    "@types/throttle-debounce": ^2.1.0
-    dayjs: ^1.10.4
-  checksum: 65a59571ac042b442effc96d979c73365da153c34c489c698b2974a2d9fea877a8acf4030dad6becc0ecaecb6b296f598db2e9badd33a9f31eee6245d0301e92
   languageName: node
   linkType: hard
 
